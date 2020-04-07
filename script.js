@@ -289,7 +289,7 @@ document.addEventListener('keydown', function (event) {
     if (event.code === 'ShiftLeft' && event.shiftKey && !event.repeat) {
         shiftEvent(event)
     };
-    if (event.shiftKey && event.key === 'Control' || event.ctrlKey && event.key === 'Shift') {
+    if (event.shiftKey && event.key === 'ControlLeft' || event.ctrlKey && event.key === 'ShiftLeft') {
         switchLanguage(event)
     };
     eventKey();
